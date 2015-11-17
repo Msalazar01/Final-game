@@ -1,0 +1,36 @@
+body {
+
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+	font-family: jennaSue;
+	font-size: 50px;
+}
+
+#container {
+	background: #eee;
+	display: block; 
+	margin: auto;
+	width: 500px;
+	height: 340px;
+	padding: 10px;
+}
+
+	#horse {
+		width: 90px; 
+		height: 80px;
+		margin-top: 270px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		position: absolute;
+	}
+
+.moveleft {
+	margin-left: 500px;
+	float: center;
+	position: relative;
+}
