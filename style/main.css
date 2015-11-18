@@ -11,7 +11,7 @@ h1 {
 }
 
 #container {
-	background: #eee;
+	background-image: url(../img/bg.jpg);
 	display: block; 
 	margin: auto;
 	width: 500px;
@@ -19,18 +19,12 @@ h1 {
 	padding: 10px;
 }
 
-	#horse {
-		width: 90px; 
+	#charlie {
+		width: 70px; 
 		height: 80px;
-		margin-top: 270px;
+		margin-top: 260px;
 		display: block;
 		margin-right: auto;
 		margin-left: auto;
 		position: absolute;
 	}
-
-.moveleft {
-	margin-left: 500px;
-	float: center;
-	position: relative;
-}
