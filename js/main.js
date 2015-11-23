@@ -1,21 +1,24 @@
-var conW = $(window).width() - $('.container').width();
-// console.log (conW)
 
 $(document).keydown(function(e) {
 
-    var position = $('#charlie').position();
-                
-    switch(e.keyCode) {
-        
-        case 39: // right
-        $('#charlie').css('left', position.left + 20 + 'px').removeClass('flip');
-        break;
+var position = $('#charlie').position(),
+    charlieW = $('#charlie').width() - 20,
+    contW = $('.container').width(),
+    step = 20;
 
-        case 37: // left
-        $('#charlie').css('left', position.left - 20 + 'px').addClass('flip');
-                         
+switch(e.keyCode) {
+
+    case 39: // right
+    if ( position.left + charlieW + step < contW ) {
+        $('#charlie').css('left', position.left + step + 'px').removeClass('flip');
+    }
+    break;
+
+    case 37: // left
+    if ( position.left - step > 0 ) {
+        $('#charlie').css('left', position.left - step + 'px').addClass('flip');
     }
 
+}
 
 });
-

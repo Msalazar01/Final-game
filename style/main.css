@@ -17,6 +17,7 @@ h1 {
 	width: 500px;
 	height: 340px;
 	padding: 10px;
+	position: relative;
 }
 
 	#charlie {
@@ -32,3 +33,4 @@ h1 {
 	.flip {
 		transform:scaleX(-1);
 	}
+
