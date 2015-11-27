@@ -7,8 +7,9 @@ body {
 h1 {
 	text-align: center;
 	font-family: jennaSue;
-	font-size: 50px;
+	font-size: 60px;
 }
+
 
 .container {
 	background-image: url(../img/bg.jpg);
@@ -16,9 +17,23 @@ h1 {
 	margin: auto;
 	width: 500px;
 	height: 340px;
-	padding: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-top: 0.5px;
 	position: relative;
+	
 }
+
+	h2, h3 {
+		display: inline;
+		padding-right: 50px;
+		font-family: jennaSue;
+		font-size: 30px;
+		color: white;
+		font-weight: 500;
+
+	}
 
 	#charlie {
 		width: 70px; 
@@ -33,4 +48,32 @@ h1 {
 	.flip {
 		transform:scaleX(-1);
 	}
+
+.snow {
+	display: inline;
+	width: 8px;
+	height: 8px;
+	background-color: white;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+.slow {
+	
+	transition: top 2s linear;
+}
+.med {
+	transition: top 1.5s linear;
+}
+
+.fast {
+	transition: top 1s linear;
+}
+
+.fall {
+	top:100%;
+}
+
+
 
