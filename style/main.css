@@ -8,8 +8,17 @@ h1 {
 	text-align: center;
 	font-family: jennaSue;
 	font-size: 60px;
+	background: -webkit-linear-gradient(top, #d3f7fc, #41d5e0);
+ 	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 
+h2 {
+	text-align: center;
+	font-family: jennaSue;
+	font-size: 30px;
+	color: black;
+}
 
 .container {
 	background-image: url(../img/bg.jpg);
@@ -25,18 +34,8 @@ h1 {
 	
 }
 
-	h2, h3 {
-		display: inline;
-		padding-right: 50px;
-		font-family: jennaSue;
-		font-size: 30px;
-		color: white;
-		font-weight: 500;
-
-	}
-
 	#charlie {
-		width: 60px; 
+		width: 50px; 
 		height: 70px;
 		margin-top: 260px;
 		display: block;
@@ -45,18 +44,44 @@ h1 {
 		position: absolute;
 	}
 
-	button {
-		margin-top: 10px;
-		margin-right: auto;
-		margin-left: auto;
-		display: block;
-		position: relative;
-		height: 30px;
-		width: 50px;
-}
-
 	.flip {
 		transform:scaleX(-1);
+	}
+
+button {
+	background: #d3f7fc;
+	background: #d3f7fc;
+	background: #d3f7fc;
+	background-image: -webkit-linear-gradient(top, #d3f7fc, #41d5e0);
+	background-image: -moz-linear-gradient(top, #d3f7fc, #41d5e0);
+	background-image: -ms-linear-gradient(top, #d3f7fc, #41d5e0);
+	background-image: -o-linear-gradient(top, #d3f7fc, #41d5e0);
+	background-image: linear-gradient(to bottom, #d3f7fc, #41d5e0);
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 10px;
+	text-decoration: none;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	position: relative;
+	height: 40px;
+	width: 90px;
+}
+
+	.btn:hover {
+	  background: #41d5e0;
+	  background-image: -webkit-linear-gradient(top, #41d5e0, #d3f7fc);
+	  background-image: -moz-linear-gradient(top, #41d5e0, #d3f7fc);
+	  background-image: -ms-linear-gradient(top, #41d5e0, #d3f7fc);
+	  background-image: -o-linear-gradient(top, #41d5e0, #d3f7fc);
+	  background-image: linear-gradient(to bottom, #41d5e0, #d3f7fc);
+	  text-decoration: none;
 	}
 
 .snowflakes {
@@ -67,6 +92,7 @@ h1 {
     width:10px;
     height:10px;
     background:white;
+    border-radius: 5px;
 }
 
 

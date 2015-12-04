@@ -1,11 +1,11 @@
-    $( '.start')
-        .on('click', function(){
+$( '.start')
+    .on('click', function(){
 
 function fallingSnow() {
     
         var snowflake = $('<div class="snowflakes"></div>');
             snowX = Math.floor(Math.random() * $('.container').width());
-            snowSpd = Math.floor(Math.random() + 5000);
+            snowSpeed = Math.floor(Math.random() + 5000);
 
         
         $('#container').prepend(snowflake); 
@@ -18,7 +18,7 @@ function fallingSnow() {
             top: '340px', 
 
         }, 
-            snowSpd, function() {
+            snowSpeed, function() {
             
             $(this).remove();
             fallingSnow();
@@ -26,7 +26,7 @@ function fallingSnow() {
 
     }
 
-    var timer = Math.floor(Math.random() + 1000);
+    var timer = Math.floor(Math.random() * 5) + 3000;
     
     window.setInterval( function() {
         
@@ -57,6 +57,27 @@ switch(e.keyCode) {
 };
 
 });
+
+var secs = 0;
+var mins = 0;
+
+var timer = setInterval(function() {
+    secs++;
+    if (secs == 60) {
+        mins++;
+        secs = 0;
+
+        mins = "0" + mins;
+    }
+
+    if (secs < 10) {
+        secs = "0" + secs;
+    }
+
+
+    $("#timer").text(mins + ":" + secs)
+
+}, 1000);
 
 
 });
