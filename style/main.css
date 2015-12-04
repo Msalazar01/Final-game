@@ -36,8 +36,8 @@ h1 {
 	}
 
 	#charlie {
-		width: 70px; 
-		height: 80px;
+		width: 60px; 
+		height: 70px;
 		margin-top: 260px;
 		display: block;
 		margin-right: auto;
@@ -45,35 +45,35 @@ h1 {
 		position: absolute;
 	}
 
+	button {
+		margin-top: 10px;
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		position: relative;
+		height: 30px;
+		width: 50px;
+}
+
 	.flip {
 		transform:scaleX(-1);
 	}
 
-.snow {
-	display: inline;
-	width: 8px;
-	height: 8px;
-	background-color: white;
-	position: absolute;
-	top:0;
-	left: 0;
+.snowflakes {
+    top:0px;
+    left:0px;
+    position:absolute;
+    z-index:200;
+    width:10px;
+    height:10px;
+    background:white;
 }
 
-.slow {
-	
-	transition: top 2s linear;
-}
-.med {
-	transition: top 1.5s linear;
-}
 
-.fast {
-	transition: top 1s linear;
-}
 
-.fall {
-	top:100%;
-}
+
+
+
 
 
 

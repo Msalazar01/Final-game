@@ -1,3 +1,39 @@
+    $( '.start')
+        .on('click', function(){
+
+function fallingSnow() {
+    
+        var snowflake = $('<div class="snowflakes"></div>');
+            snowX = Math.floor(Math.random() * $('.container').width());
+            snowSpd = Math.floor(Math.random() + 5000);
+
+        
+        $('#container').prepend(snowflake); 
+
+        snowflake.css ({
+            'left' : snowX + 'px' 
+        });
+
+        snowflake.animate ({ 
+            top: '340px', 
+
+        }, 
+            snowSpd, function() {
+            
+            $(this).remove();
+            fallingSnow();
+        });
+
+    }
+
+    var timer = Math.floor(Math.random() + 1000);
+    
+    window.setInterval( function() {
+        
+        fallingSnow();
+    
+    }, timer);
+
 
 $(document).keydown(function(e) {
 
@@ -17,9 +53,17 @@ switch(e.keyCode) {
     case 37: // left
     if ( position.left - step > 0 ) {
         $('#charlie').css('left', position.left - step + 'px').addClass('flip');
-    }
-
-}
+    };
+};
 
 });
+
+
+});
+
+
+
+
+
+
 
