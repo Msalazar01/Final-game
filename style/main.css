@@ -34,7 +34,14 @@ h2 {
 	
 }
 
+#timer {
+	position: relative;
+	color: white;
+	float: right;
+}
+
 	#charlie {
+		background-color: red;
 		width: 50px; 
 		height: 70px;
 		margin-top: 260px;
