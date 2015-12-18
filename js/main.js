@@ -22,7 +22,9 @@ document.getElementById('peanuts').play();
 
     }
 
-    var timer = Math.floor(Math.random() * 5) + 3000;
+    // Time interval
+
+    var timer = Math.floor(Math.random() * 30) + 800;
     //var timer = 1;
     
     window.setInterval( function() {
@@ -48,7 +50,7 @@ document.getElementById('peanuts').play();
 
 
             if (top > 250 && left > cbrownleft && left < cbrownright) {
-                alert("Touch");
+                alert("You Lose with " + secs + " seconds");
                  $(this).remove();
 
             }
@@ -60,7 +62,7 @@ document.getElementById('peanuts').play();
         })
         
     }
-    setInterval(dofall, 10);
+    setInterval(dofall, 8);
        
 
 
@@ -117,6 +119,11 @@ var timer = setInterval(function() {
 
 });
 
+// Reload page 
+
+$('.reset').on("click", function() {
+    location.reload(true);  
+});
 
 
 
